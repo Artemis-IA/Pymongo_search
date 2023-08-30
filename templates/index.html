@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Liste des Publications</title>
+</head>
+
+<body>
+    <h1>Liste des Publications</h1>
+    <p>Nombre total de publications : {{ count }}</p>
+    <ul>
+        {% for publication in publications %}
+        <li><a href="{{ url_for('publication_details', publication_id=publication._id) }}">{{ publication.title }}</a>
+        </li>
+        {% endfor %}
+    </ul>
+    <a href="{{ url_for('filter_author') }}">Filtrer par auteur</a>
+    <a href="{{ url_for('filter_date') }}">Filtrer par date</a>
+    <a href="{{ url_for('add_publication') }}">Ajouter une publication</a>
+</body>
+
+</html>

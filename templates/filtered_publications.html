@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Résultats de Filtrage</title>
+</head>
+
+<body>
+    <h1>Résultats de Filtrage</h1>
+    <ul>
+        {% for publication in publications %}
+        <li><a href="{{ url_for('publication_details', publication_id=publication._id) }}">{{ publication.title }}</a>
+        </li>
+        {% endfor %}
+    </ul>
+    <a href="{{ url_for('index') }}">Retour à la liste des publications</a>
+</body>
+
+</html>

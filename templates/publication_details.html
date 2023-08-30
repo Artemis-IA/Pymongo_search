@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Détails de la Publication</title>
+</head>
+
+<body>
+    <h1>Détails de la Publication</h1>
+    <p><strong>Titre :</strong> {{ publication.title }}</p>
+    <p><strong>Auteurs :</strong> {{ publication.authors | join(', ') }}</p>
+    <p><strong>Année :</strong> {{ publication.year }}</p>
+    <p><strong>Livre :</strong> {{ publication.booktitle }}</p>
+    <p><strong>URL :</strong> <a href="{{ publication.url }}">{{ publication.url }}</a></p>
+    <a href="{{ url_for('index') }}">Retour à la liste des publications</a>
+</body>
+
+</html>

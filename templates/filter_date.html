@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Filtrer par Date</title>
+</head>
+
+<body>
+    <h1>Filtrer par Date</h1>
+    <form method="post">
+        <label for="start_date">Sélectionnez une date de début :</label>
+        <input type="number" name="start_date" id="start_date">
+        <button type="submit">Filtrer</button>
+    </form>
+    <a href="{{ url_for('index') }}">Retour à la liste des publications</a>
+</body>
+
+</html>

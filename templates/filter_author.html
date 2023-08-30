@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Filtrer par Auteur</title>
+</head>
+
+<body>
+    <h1>Filtrer par Auteur</h1>
+    <form method="post">
+        <label for="author">Sélectionnez un auteur :</label>
+        <select name="author" id="author">
+            {% for author in authors %}
+            <option value="{{ author }}">{{ author }}</option>
+            {% endfor %}
+        </select>
+        <button type="submit">Filtrer</button>
+    </form>
+    <a href="{{ url_for('index') }}">Retour à la liste des publications</a>
+</body>
+
+</html>
