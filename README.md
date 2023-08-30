@@ -18,5 +18,5 @@ Ce projet consiste en la création d'un moteur de recherche de publications scie
 1. Clonez ce dépôt sur votre machine :
 
    ```bash
-   git clone https://github.com/votre-utilisateur/moteur-recherche-scientifique.git
-   cd moteur-recherche-scientifique
+   git clone https://github.com/Artemis-IA/Pymongo_search.git
+   cd Pymongo_search
