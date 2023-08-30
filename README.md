@@ -1,4 +1,4 @@
-# Pymongo_search
+# Pymongo_search 🍃
 # Projet de Moteur de Recherche de Publications Scientifiques avec MongoDB et Flask
 
 Ce projet consiste en la création d'un moteur de recherche de publications scientifiques en utilisant MongoDB comme base de données et Flask comme framework web pour la construction de l'interface utilisateur.
